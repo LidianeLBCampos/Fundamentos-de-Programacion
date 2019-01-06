@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="UOCRailway" Database="" Version="10.0.0">
+  <Project Name="UOCRailway" Path="UOCRailway.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Test" Selected="yes">
+      <Environment/>
+      <Project Name="UOCRailway" ConfigName="Test"/>
+      <Project Name="UOCRailway" ConfigName="Test"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Menu" Selected="no">
+      <Environment/>
+      <Project Name="UOCRailway" ConfigName="Menu"/>
+      <Project Name="UOCRailway" ConfigName="Menu"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

@@ -1,0 +1,14 @@
+../src/api.c
+../src/main.c
+../src/menu.c
+../src/test.c
+../src/good.c
+../src/train.c
+../src/stack.c
+../include/api.h
+../include/data.h
+../include/menu.h
+../include/test.h
+../include/good.h
+../include/train.h
+../include/stack.h
