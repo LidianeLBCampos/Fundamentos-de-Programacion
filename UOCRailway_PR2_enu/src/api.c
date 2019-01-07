@@ -364,15 +364,11 @@ void addPendingOrder(tAppData *object, tOrder order, tError *retVal)
 tBoolean checkStockAtOrigin( tWareHouse wh, tGood good, int qtt )
 {
     tBoolean result= FALSE;
-    
-    /******** PR2 - EX2A.1 *********/
-    
-    
-    
-    
-    
-    /*****************************/
-    
+    qtt = warehouse_getStock( good.id, wh);
+	
+	if(qtt > 0){
+		result = TRUE;
+	}
     return result;
 }
 
@@ -396,13 +392,10 @@ tBoolean searchTrainAtOrigin( tTrainTable trainTable,
 
 void loadTrain( tTrainStack *mainPlatform, tWareHouse *wh, tGood good, int qtt )
 {
-    /******** PR2 - EX2A.3 *********/
-    
-    
-    
-    
-    
-    /*****************************/ 
+	tLoadedTrain t = trainStack_top(mainPlatform);
+	t.load = good.id;
+	warehouse_updateStock( good.id, *wh,  qtt );
+	
 }
 
 void moveTrainFromOriginToDestination(  tTrainStack *originPlatform,
